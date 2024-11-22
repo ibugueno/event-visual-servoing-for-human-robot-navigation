@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Event-Based Visual Servoing for Human-Robot Navigation using Reinforcement Learning.">
+  <meta name="keywords" content="Event-based Visual Servoing, Reinforcement Learning, Robot Navigation, Human-Robot Interaction, Sensor Fusion">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Event-Based Visual Servoing for Human-Robot Navigation using Reinforcement Learning</title>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.ico">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://ibugueno.github.io/event-visual-servoing-for-human-robot-navigation/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Event-Based Visual Servoing for Human-Robot Navigation using Reinforcement Learning</h1>
+          <div class="is-size-5 publication-authors">
+
+            <span class="author-block">
+              <a href="hhttps://ibugueno.github.io/">Ignacio Bugueno-Cordova</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=U0XHBs8AAAAJ">Javier Ruiz-del-Solar</a><sup>1,2</sup>,</span>
+            <span class="author-block">
+              <a href="https://rodrigo.verschae.org/">Rodrigo Verschae</a><sup>3</sup>,
+            </span>
+
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Department of Electrical Engineering, Universidad de Chile, Chile,</span>
+            <span class="author-block"><sup>2</sup>Advanced Mining Technology Center (AMTC), Universidad de Chile, Chile,</span>
+            <span class="author-block"><sup>3</sup>Institute of Engineering Sciences, Universidad de O'Higgins, Chile</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://rwhri.github.io/Humanoids2024_workshop/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="humanoids2024_poster_event-based_visual_servoing.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Poster</span>
+                </a>
+              </span>
+
+              <!-- Video Link. -->
+              
+              <span class="link-block">
+                <a href="https://youtu.be/dF8_ektJ8Nk"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/steve.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/chair-tp.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-shiba">
+          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/shiba.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-fullbody">
+          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/fullbody.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-blueshirt">
+          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/blueshirt.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-mask">
+          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/mask.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-coffee">
+          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/coffee.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-toby">
+          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/toby2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            This work presents a visual servoing controller for social robots using event cameras and reinforcement learning, specifically designed to support safe, adaptive, and socially-aware human-robot interactions. The proposed controller enables real-time navigation and obstacle avoidance in dynamic environments by integrating event-based visual feedback and learning-based policy optimization. The results highlight the approach’s robustness in managing physical and social interaction challenges, adapting smoothly to changes in human motion and environmental conditions. 
+          </p>
+          <p>
+            A demo video can be watched on the \href{https://ibugueno.github.io/event-visual-servoing-for-human-robot-navigation/}{project website}.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://youtu.be/dF8_ektJ8Nk?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@InProceedings{bugueno2024coloreventemulator,
+  author="Bugueno-Cordova, Ignacio
+  and Ruiz del Solar, Javier
+  and Verschae, Rodrigo",
+  title="Event-Based Visual Servoing for Human-Robot Navigation using Reinforcement Learning",
+  conference="RW-HRI Humanoids Workshop, The IEEE-RAS International Conference on Humanoid Robots",
+  year="2024",
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <!--
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
